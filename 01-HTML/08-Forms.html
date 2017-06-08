@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Form Handling</h1>
+
+<form action="login.html" method="get">
+    <label for="user_name">Enter Name</label>
+    <input type="text" id="user_name" name="u_name" value="Ram"/>
+    <br/><br/>
+    <label for="pwd">Enter Password</label>
+    <input type="password" id="pwd" name="u_pwd"/>
+    <br/><br/>
+    <label>Select Month</label>
+    <select name="month">
+        <option>Select Month</option>
+        <option value="Jan">January</option>
+        <option value="Feb">February</option>
+        <option value="Mar">March</option>
+        <option value="Apr">April</option>
+        <option value="Jun">June</option>
+        <option value="Jul">July</option>
+    </select>
+    <br/><br/>
+    Select Country
+    <select>
+        <optgroup label="Asia">
+            <option value="Ind">India</option>
+            <option value="Chi">China</option>
+            <option value="Pak">Pakistan</option>
+            <option value="SL">Sri Lanka</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="UK">United Kingdom</option>
+            <option value="Fr">France</option>
+            <option value="It">Italy</option>
+        </optgroup>
+    </select>
+    <br/><br/>
+    Select Gender
+    <input type="radio" name="gender" value="m"/> Male
+    <input type="radio" name="gender" value="f"/> Female
+    <br/><br/>
+    Select Hobby
+    <input type="checkbox" name="hobby"/> Cricket
+    <input type="checkbox" name="hobby"/> Football
+    <input type="checkbox" name="hobby"/> Chess
+    <input type="checkbox" name="hobby"/> Badminton
+    <br/><br/>
+    <input type="submit" value="Login"/>
+</form>
+
+</body>
+</html>
