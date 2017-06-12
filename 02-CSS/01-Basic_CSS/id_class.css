@@ -1,0 +1,19 @@
+div {
+    height: 200px;
+    background-color: red;
+}
+
+#div_1 {
+    background-color: chocolate;
+}
+#div_2 {
+    background-color: cornflowerblue;
+}
+
+.class_1 {
+    width: 400px;
+}
+
+.class_2 {
+    width: 800px;
+}

@@ -1,0 +1,12 @@
+.child {
+    height: 150px;
+    background-color: chocolate;
+}
+
+#parent_2 .secondary_child {
+    background-color: blueviolet;
+}
+
+#parent_2 .child .grand_child {
+    background-color: darkkhaki;
+}
