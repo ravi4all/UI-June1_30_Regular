@@ -1,0 +1,19 @@
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0px 5px;
+    border-right: 1px solid #bb0000;
+}
+.column:last-child {
+    border-right: none;
+}
+
+.column img {
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+#two-col-layout {
+    background-color: blanchedalmond;
+}
+
+.column_1 {
+    float: left;
+    width: 30%;
+    /*background-color: #0077B5;*/
+}
+
+.column_2 {
+    /*background-color: #ffc838;*/
+    float: right;
+    width: 30%;
+}
+
+/*.clearfix {
+    clear: left;
+}*/
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.demo {
+    background-color: red;
+    /*height: 300px;*/
+}
