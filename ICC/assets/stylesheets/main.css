@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container {
+    padding: 0px 15px;
+}
+
+/*
+Top-bar
+*/
+#top-bar{
+    background-color: #DAE0E4;
+    padding: 0px 0px 5px;
+}
+#top-bar .icc-links {
+    width: 15%;
+    padding-top: 5px;
+}
+#top-bar .icc-links a {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+}
+#top-bar i {
+    margin-right: 7px;
+}
+#top-bar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#top-bar ul li{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+    border-right: 1px solid gray;
+    padding: 5px 10px 0px;
+}
+#top-bar ul li a, #top-bar .icc-links a {
+    color: #51626f;
+    text-decoration: none;
+}
+#top-bar ul li:last-child {
+    border: none;
+}
+#top-bar .user_section {
+    width: 54%;
+}
+#top-bar .sociable li {
+    border: none;
+    padding: 0px 5px;
+}
+#top-bar .sociable li span {
+    margin-right: 10px;
+}
+#top-bar .sociable li a {
+    font-size: 16px;
+}
+
+
+
+/*
+Header
+*/
+#header {
+    /*background-color: #172650;
+    background-image: url("../images/ct-header.jpg");*/
+    background: #172650 url("../images/ct-header.jpg") no-repeat right 0px;
+}
+#header .logo {
+    margin: 9px 30px 0px 0px;
+    width: 13%;
+    height: 59px;
+    background-image: url("../images/global-sprite.png");
+    background-position: 0px -422px;
+}
+#header .search {
+    width: 9%;
+    padding: 27px 15px;
+    text-align: right;
+}
+#header .search a {
+    color: #fff;
+    text-decoration: none;
+}
+#header .search .search_icon {
+    height: 26px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -734px -109px;
+    background-image: url("../images/global-sprite.png");
+}
+
+/*
+Main-Navigation
+*/
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-navigation ul li {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    float: left;
+    padding: 27px 15px;
+}
+#main-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
