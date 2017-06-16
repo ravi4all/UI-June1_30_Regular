@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+}
+#topbar {
+    height: 50px;
+    background-color: #0077B5;
+}
+#header {
+    background-color: #ffc838;
+    text-align: center;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    /*bottom: 0px;*/
+    top: 0px;
+}
+
+#content {
+    margin-top: 200px;
+    text-align: center;
+}
+#content img {
+    width: 49.8%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#bottom {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
