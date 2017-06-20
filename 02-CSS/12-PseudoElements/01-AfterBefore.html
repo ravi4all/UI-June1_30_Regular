@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        h2:before {
+            content: "";
+            border: 2px solid red;
+            position: absolute;
+            width: 50px;
+        }
+        p {
+            position: relative;
+        }
+        p:after {
+            content: "";
+            background-image: url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-128.png");
+            background-size: 100% 100%;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: -5px;
+            left: 12%;
+            cursor: pointer;
+        }
+        p:hover:after {
+            background-image: url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-128.png");
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pseudo Elements</h1>
+
+<p>This is my paragraph</p>
+<p>This is my paragraph</p>
+<p>This is my paragraph</p>
+<p>This is my paragraph</p>
+<p>This is my paragraph</p>
+<p>This is my paragraph</p>
+<p>This is my paragraph</p>
+
+<h2>This is a heading</h2>
+
+</body>
+</html>
