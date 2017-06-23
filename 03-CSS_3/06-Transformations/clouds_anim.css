@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#container{
+    overflow: hidden;
+    height: 630px;
+    background-image: url("https://i.makeagif.com/media/5-03-2015/SmANu-.gif");
+    background-size: 100% 100%;
+}
+
+#superman {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    background-image: url("http://bbcpersian7.com/images/super-man-clipart-transparent-10.jpg");
+    background-size: 100% 100%;
+    transform: translate(-100%,410px);
+    transition: 5s;
+}
+
+#container:hover #superman{
+    transform: translate(389%,-300px);
+}
