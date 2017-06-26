@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#container{
+    overflow: hidden;
+    height: 630px;
+    position: relative;
+    z-index: -1;
+    background-image: url("../../images/NewImages/3d-abstract-dead-city-wallpaper.jpg");
+    background-size: 100% 100%;
+}
+
+#superman {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    background-image: url("http://bbcpersian7.com/images/super-man-clipart-transparent-10.jpg");
+    background-size: 100% 100%;
+    /*transform: translate(-100%,410px);
+    transition: 5s;*/
+    animation: superman 4.5s linear;
+    animation-fill-mode: forwards;
+}
+
+/*#container:hover #superman{
+    transform: translate(389%,-300px);
+}*/
+
+@keyframes superman {
+    0% {
+        transform: translate(-100%,410px);
+    }
+    80% {
+        transform: translate(180%,150px);
+    }
+    /*90% {
+        transform: translate(180%,300px) rotatez(-150deg);
+    }*/
+    85% {
+        transform: translate(180%,150px) rotateZ(-150deg);
+    }
+    100% {
+        transform: translate(180%,400px) rotatez(-150deg);
+    }
+}
+
+
+#hulk {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    background-image: url("../../images/NewImages/14984123774008%20(1).png");
+    background-size: 100% 100%;
+    left: 47%;
+    top: 37%;
+    z-index: -1;
+    animation: hulk 4s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes hulk {
+    0% {
+        transform: scale(0.1,0.1) translate(0px,0px);
+    }
+    /*50% {
+        transform: scale(0.5,0.5) translate(0px,-300px);
+    }*/
+    50% {
+        transform: scale(0.6,0.6) translate(0px,-500px);
+    }
+    100% {
+        transform: scale(3,3) translate(0px,50px);
+    }
+}
+
+/*
+#ironman {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    background-image: url("../../images/NewImages/LziFSQN.png");
+    background-size: 100% 100%;
+    right: 17%;
+    top: 10%;
+    z-index: -1;
+    animation: ironman 8s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes ironman {
+    0% {
+        transform: scale(0.1,0.1) translate(0px,0px);
+    }
+    50% {
+        transform: scale(0.6,0.6) translate(0px,50px);
+    }
+    100% {
+        transform: scale(3,3) translate(-300px,50px);
+    }
+}*/
