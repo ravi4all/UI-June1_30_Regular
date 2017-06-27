@@ -6,7 +6,16 @@
     <style>
         div {
             border: 1px solid red;
-            perspective: 400px;
+            /*perspective: 400px;*/
+            animation: div_1 5s infinite linear;
+        }
+        @keyframes div_1 {
+            0% {
+                perspective: 150px;
+            }
+            100% {
+                perspective: 300px;
+            }
         }
         div img {
             animation: anim_1 5s infinite;
