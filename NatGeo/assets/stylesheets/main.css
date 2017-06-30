@@ -1,0 +1,191 @@
+body {
+    margin: 0px;
+    font-family: arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#topbar {
+    padding: 10px 0px;
+    background-color: #000;
+}
+#topbar .nat_geo_sites{
+    width: 20%;
+}
+#topbar a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+#topbar .user_section {
+    width: 30%;
+    text-align: right;
+}
+
+#topbar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#topbar ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+
+#header {
+    padding: 15px 0px;
+}
+#header .container{
+    display: flex;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+#header .header_right {
+    margin-left: auto;
+    padding-top: 15px;
+    width: 15%;
+}
+#header .header_right .topics a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#header .topics a i {
+    margin-left: 20px;
+}
+#header .header_right .search a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#main-nav ul {
+    margin: 15px 0px 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-nav ul li {
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#main-nav ul li:first-child {
+    border-left: 1px solid #aaa;
+}
+#main-nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0px 15px;
+    color: #999;
+    border-right: 1px solid #aaaaaa;
+}
+
+
+#banner {
+    position: relative;
+    max-height: 550px;
+}
+#banner img {
+    width: 100%;
+    max-height: 550px;
+}
+#banner .wrapper {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+#banner .inner_wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#banner .description {
+    display: table-cell;
+    vertical-align: middle;
+}
+#banner span {
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#banner h2 {
+    font-size: 60px;
+    line-height: 64px;
+    letter-spacing: 8px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+#banner .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    /*background-color: rgba(0,0,0,0.3);*/
+}
+
+#banner:before {
+    content: "";
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 40%;
+    width: 27%;
+}
+#banner:after {
+    content: "";
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 55%;
+    width: 44%;
+}
+
+#banner h2:before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    height: 60px;
+    border: 2px solid yellow;
+}
