@@ -27,7 +27,7 @@ body {
 }
 
 #topbar {
-    padding: 10px 0px;
+    padding: 10px;
     background-color: #000;
 }
 #topbar .nat_geo_sites{
@@ -54,6 +54,26 @@ body {
     margin: 0px 10px;
 }
 
+@media (max-width: 992px) {
+    #topbar .user_section {
+        width: 40%;
+    }
+}
+@media(max-width: 767px){
+    #topbar .nat_geo_sites {
+        float: none;
+        width: 100%;
+    }
+    #topbar .user_section {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+    #topbar ul li:first-child {
+        margin-left: 0px;
+    }
+}
+
 
 #header {
     padding: 15px 0px;
@@ -66,6 +86,10 @@ body {
     margin-right: 40px;
 }
 
+#header {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 #header .header_right {
     margin-left: auto;
     padding-top: 15px;
@@ -88,6 +112,28 @@ body {
     font-weight: 100;
 }
 
+@media (max-width: 992px) {
+    #header .logo {
+        width: 18%;
+        margin-right: 12px;
+    }
+    #header .logo img {
+        width: 100%;
+    }
+    #header .header_right {
+        width: 21%;
+    }
+}
+@media (max-width: 767px) {
+    #header .logo {
+        width: 150px;
+    }
+    #header .header_right {
+        display: none;
+    }
+}
+
+
 #main-nav ul {
     margin: 15px 0px 0px;
     padding: 0px;
@@ -108,6 +154,83 @@ body {
     padding: 0px 15px;
     color: #999;
     border-right: 1px solid #aaaaaa;
+}
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 90px;
+    cursor: pointer;
+}
+input[value="active_menu"] {
+    height: 25px;
+    width: 30px;
+    position: absolute;
+    display: block;
+    right: 12px;
+    top: 80px;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu-btn .line {
+    display: block;
+    width: 25px;
+    border: 2px solid #000;
+    margin-bottom: 2px;
+    transition: 1s;
+}
+@media (max-width: 992px) {
+    #main-nav ul li a {
+        padding: 0px 8px;
+    }
+}
+@media (max-width: 767px) {
+    #main-nav ul {
+        text-align: center;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: 1s;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 125px;
+        z-index: 1000;
+        background-color: rgba(0,0,0,0.5);
+    }
+    #main-nav ul li {
+        font-size: 20px;
+        display: block;
+    }
+    #main-nav ul li a {
+        border-right: none;
+        border-bottom: 1px solid #aaaaaa;
+        padding: 10px 0px;
+        color: #fff;
+    }
+    .menu-btn {
+        display: block;
+    }
+    input[value="active_menu"]:checked ~ #main-nav ul {
+        transform: scale(1,1);
+    }
+    input[value="active_menu"]:checked ~ .menu-btn .line:nth-child(2) {
+        opacity: 0;
+    }
+    input[value="active_menu"]:checked ~ .menu-btn .line:first-child {
+        transform: rotate(45deg);
+    }
+    input[value="active_menu"]:checked ~ .menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -12px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
 }
 
 
@@ -188,4 +311,26 @@ body {
     left: -50px;
     height: 60px;
     border: 2px solid yellow;
+}
+
+@media (max-width: 992px) {
+    #banner h2 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 767px) {
+    #banner .wrapper {
+        left: 40px;
+    }
+    #banner h2 {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    #banner p {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
