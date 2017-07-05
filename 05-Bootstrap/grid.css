@@ -1,0 +1,54 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#header {margin-bottom: 50px;}
+
+#main {
+    height: 300px;
+    background-color: #005689;
+    margin-bottom: 20px;
+}
+
+#sidebar {
+    height: 300px;
+    background-color: #c9e2b3;
+}
+
+.red {
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: red;
+}
+.green {
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: green;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+}
+.menu-button .line {
+    display: block;
+    width: 25px;
+    border: 2px solid #000;
+    margin-bottom: 2px;
+    transition: 1s;
+}
+
+img {
+    width: 100%;
+    max-height: 500px;
+}
