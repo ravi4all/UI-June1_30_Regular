@@ -1,0 +1,125 @@
+body {
+    font-family: arial;
+}
+#topbar {
+    background-color: #141414;
+    border-bottom: 1px solid #000;
+}
+#topbar ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#topbar ul li {
+    padding-right: 10px;
+    border-right: 1px solid #9d9d9d;
+}
+#topbar ul li a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#topbar .form {
+    position: relative;
+}
+#topbar input[type="search"] {
+    color: #fff;
+    border: none;
+    background-color: #141414;
+    padding: 0px 5px;
+}
+#topbar input[type="submit"] {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url("../images/search_box_icon.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 20px;
+    width: 20px;
+}
+#topbar ul li:last-child {
+    background-color: #9e1b32;
+    padding-left: 10px;
+}
+
+#header {
+    background-color: #181818;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+#header ul li a {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+#header ul li a:hover {
+    text-decoration: none;
+}
+#header .logo {
+    padding: 15px 10px;
+}
+#header .logo img {
+    width: 70%;
+}
+
+#secondary_nav ul {
+    padding: 12px 0px;
+}
+#secondary_nav ul li {
+    margin: 0px 15px;
+}
+
+#main-navigation ul li {
+    border-left: 1px solid #313131;
+    text-align: center;
+    width: 15%;
+    background-color: #141414;
+}
+#main-navigation ul li a {
+    display: block;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+#main-navigation ul li:hover {
+    background-color: #313131;
+}
+
+
+#banner .carousel-caption {
+    background-color: rgba(0,0,0,0.8);
+    width: 450px;
+    height: 220px;
+    top: 14%;
+    left: 0%;
+    text-align: left;
+}
+#banner .carousel-caption h3 {
+    padding: 0px 60px;
+}
+#banner .carousel-caption p {
+    padding: 0px 60px;
+}
+#banner .carousel-indicators li {
+    text-indent: 0px;
+    border: none;
+    border-radius: 0px;
+    height: 20px;
+    width: 20px;
+    background-color: #9d9d9d;
+}
+#banner .carousel-indicators .active {
+    background-color: #000;
+}
+#banner .carousel-indicators {
+    left: 35%;
+    width: 20%;
+}
