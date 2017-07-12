@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div_1 {
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        function change_me(obj){
+            obj.innerHTML = '<img src="../../../images/bth_HulkKickinghulk06.gif" alt="image"/>'
+        }
+        function change_me_2(obj){
+            obj.innerHTML = '<img src="../../../images/hulk5-18463.gif" alt="image"/>';
+        }
+    </script>
+</head>
+<body>
+
+<h1>Mouse Events</h1>
+
+<div id="div_1">
+    <h2>This is a heading</h2>
+    <div onmouseover="change_me(this)" onmouseout="change_me_2(this)">
+        <img src="../../../images/hulk5-18463.gif" alt="image"/>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function validate(){
+            /*alert("JS Called")*/
+            document.getElementById("show").innerHTML = "You cannot leave this field blank"
+        }
+    </script>
+</head>
+<body>
+
+<h1>Blur Event</h1>
+
+<input type="text" onblur="validate()"/>
+
+<span id="show"></span>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+span {
+    transition: 1s;
+    display: inline-block;
+}
+.red {
+    border: 1px solid red;
+}
+
+.weak {
+    height: 20px;
+    width: 50px;
+    background-color: red;
+}
+
+.average {
+    height: 20px;
+    width: 100px;
+    background-color: #ffff00;
+}
+
+.strong {
+    height: 20px;
+    width: 150px;
+    background-color: green;
+}
