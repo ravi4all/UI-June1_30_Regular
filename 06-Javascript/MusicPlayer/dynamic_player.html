@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+   <!-- <style>
+        input[type="text"]{
+            color: red;
+            font-size: 20px;
+        }
+        ::-webkit-input-placeholder {
+            color: red;
+        }
+    </style>-->
+</head>
+<body>
+
+<h1>Select Songs from PC</h1>
+
+<input type="file" id="file"/>
+
+<!--
+<input type="text" placeholder="Enter Name"/>
+-->
+
+<audio controls="controls" id="audio">
+    <source src="" type="audio/mp3">
+</audio>
+<button id="play">Play</button>
+
+<script>
+    window.addEventListener("load", init);
+    function init(){
+        audio = document.getElementById("audio");
+        song = document.getElementsByClassName("song_name");
+        file = document.getElementById("file");
+        document.getElementById("play").addEventListener("click",change_song);
+    }
+    function change_song(){
+        new_song = file.files[0].name;
+        audio.pause()
+        audio.startTime = 0;
+        audio.src = "songs/"+new_song;
+        audio.play()
+    }
+</script>
+
+</body>
+</html>
