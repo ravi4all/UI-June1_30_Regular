@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function do_work(){
+            setTimeout(call_me,10000);
+        }
+        function call_me(){
+            for (var i = 0; i<100; i++){
+                for (var j = 0; j < 100; j++){
+                    console.log("Processing")
+                }
+            }
+            return "Processing Done"
+        }
+    </script>
+</head>
+<body>
+
+<h1>Why AJAX</h1>
+
+<button onclick="do_work()">Click Me</button>
+
+<input type="text" placeholder="Type here"/>
+
+</body>
+</html>
