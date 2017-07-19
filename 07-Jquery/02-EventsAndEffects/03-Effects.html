@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Effects</h1>
+
+<button id="btn_1">Slide Up</button>
+<button id="btn_2">Slide Down</button>
+<button id="btn_3">Slide Toggle</button>
+<div id="div_1">
+    <img src="../../images/NewImages/LziFSQN.png" alt="image"/>
+</div>
+
+<img src="../../images/00-22.gif" alt="image"/>
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn_1").on("click",function(){
+            $("#div_1").slideUp(5000);
+        })
+        $("#btn_2").on("click",function(){
+            $("#div_1").slideDown(5000);
+        })
+        $("#btn_3").on("click",function(){
+            $("#div_1").slideToggle(5000);
+        })
+    })
+</script>
+</body>
+</html>

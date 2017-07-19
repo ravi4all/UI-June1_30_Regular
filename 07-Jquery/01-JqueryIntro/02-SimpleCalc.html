@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<input type="text" placeholder="Enter First Num" name="f_num"/>
+<input type="text" placeholder="Enter Second Num" name="s_num"/>
+
+<button>Add</button>
+<button>Sub</button>
+<button>Mul</button>
+<button>Div</button>
+
+<h2>Result is <span></span></h2>
+
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var a = $("input[name='f_num']");
+        var b = $("input[name='s_num']");
+        $("button").click(function(){
+            var c = parseInt(a.val())+parseInt(b.val());
+            $("span").html(c);
+        })
+    })
+</script>
+
+</body>
+</html>

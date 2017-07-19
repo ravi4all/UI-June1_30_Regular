@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        #header {
+            position: fixed;
+            background-color: #269abc;
+            transition: 1s;
+            padding: 20px 0px;
+            text-align: center;
+            top: 0px;
+            width: 100%;
+        }
+        #header.active {
+            background-color: #a6e1ec;
+            padding: 10px 0px;
+        }
+        #content {
+            margin-top: 150px;
+        }
+        #footer img {
+            opacity: 0;
+            transition: 1s;
+        }
+        #footer.footer_anim img{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <h1>This is header</h1>
+</header>
+
+<div id="content">
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <!--<img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>-->
+    <!--<img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>
+    <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="img"/>-->
+</div>
+
+<div id="footer">
+    <img src="../../images/WebImages/925L.jpg" alt="image"/>
+    <img src="../../images/WebImages/925L.jpg" alt="image"/>
+</div>
+
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    $(window).on("scroll",function(){
+        if($(window).scrollTop() > 100){
+            $("#header").addClass("active")
+        }
+        else {
+            $("#header").removeClass("active");
+        }
+
+        /*var x = $("#footer").height();
+        var body_height = $("body").height()
+        y = body_height-x
+
+        if($(window).scrollTop() > y){
+            $("#footer").addClass("footer_anim");
+        }*/
+
+    })
+</script>
+</body>
+</html>

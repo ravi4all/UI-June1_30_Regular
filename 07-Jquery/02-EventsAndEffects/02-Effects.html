@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Events</h1>
+
+<button id="btn_1">Hide</button>
+<button id="btn_2">Show</button>
+<button id="btn_3">Toggle</button>
+<div id="div_1">
+    <img src="../../images/NewImages/LziFSQN.png" alt="image"/>
+</div>
+
+<img src="../../images/00-22.gif" alt="image"/>
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn_1").on("click",function(){
+            $("#div_1").hide(5000);
+        })
+        $("#btn_2").on("click",function(){
+            $("#div_1").show(5000);
+        })
+        $("#btn_3").on("click",function(){
+            $("#div_1").toggle(5000);
+        })
+    })
+</script>
+</body>
+</html>
