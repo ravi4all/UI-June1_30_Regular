@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+}
+#header {
+    position: fixed;
+    background-color: #269abc;
+    transition: 1s;
+    padding: 20px 0px;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+}
+#header.active {
+    background-color: #a6e1ec;
+    padding: 10px 0px;
+}
+#content {
+    margin-top: 150px;
+    text-align: center;
+}
+#footer {
+    text-align: center;
+}
+#footer img {
+    opacity: 0;
+    transition: 1s;
+}
+#footer.footer_anim img{
+    opacity: 1;
+}
